@@ -2076,7 +2076,7 @@ span#email {
 
 		#logo h1 {
 			position: relative;
-			color: #fff;
+			color: #000;
 			font-weight: 600;
 			font-size: 1em;
 			line-height: 1em;
@@ -2227,6 +2227,9 @@ span#email {
 				background-color: #e8edec;
 			}
 
+      #main > article {
+        text-align: center;
+      }
 /* Wide */
 
 	@media screen and (min-width: 961px) and (max-width: 1880px) {
