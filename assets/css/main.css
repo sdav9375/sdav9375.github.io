@@ -12,7 +12,7 @@ span#email {
 	color: #000;
 }
 
-#app > article.item > span {
+article#app.item > span {
   text-align: center;
 }
 
