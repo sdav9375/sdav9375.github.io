@@ -5,7 +5,7 @@
 	Prologue by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/]
+*/
 
 /* Custom styles */
 span#email {
@@ -14,6 +14,21 @@ span#email {
 
 article#app.item > span {
   text-align: center;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  height: 75px;
+  width: 100%;
+  background: #fff;
+  z-index: 1000;
+}
+
+@media screen and (max-width: 1320px) and (min-width: 961px) {
+  .row.top {
+    margin: 52px 0 -1px -20px;
+  }
 }
 
 /* Reset */
@@ -1618,7 +1633,7 @@ article#app.item > span {
 			}
 
 	h3 {
-		font-size: 1.5em;
+		font-size: 1em;
 	}
 
 	header {
@@ -1966,8 +1981,21 @@ article#app.item > span {
 	}
 
 	.item h3 {
-		font-size: 1.3em;
-		background-color: #fff;
+    font-size: 1em;
+    color: #fff;
+    text-align: center;
+  }
+
+	.desc h3 {
+    font-size: 1em;
+    color: #fff;
+    text-align: center;
+  }
+  
+	h3.title {
+    font-size: 1em;
+    color: #555152;
+    text-align: center;
 	}
 
 	.item {
@@ -1989,7 +2017,8 @@ article#app.item > span {
     -webkit-transition: opacity 0.3s linear;
     text-shadow: #000 1px 1px 0;
     color: #fff;
-		display: flex;
+    display: flex;
+    flex-direction: column;
 		justify-content: center;
 		align-items: center;
 }
@@ -2076,7 +2105,10 @@ article#app.item > span {
 		position: relative;
 		margin: 1.75em 1.5em 1.5em 1.5em;
 		min-height: 48px;
-		cursor: default;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 	}
 
 		#logo h1 {
@@ -2085,7 +2117,11 @@ article#app.item > span {
 			font-weight: 600;
 			font-size: 1em;
 			line-height: 1em;
-		}
+    }
+    
+    #logo h4 {
+      font-size: .8em;
+    }
 
 		#logo p {
 			position: relative;
