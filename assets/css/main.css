@@ -22,14 +22,36 @@ article#app.item > span {
   height: 75px;
   width: 100%;
   background: #fff;
+  padding-left: 2em;
   z-index: 1000;
+}
+
+p.intro {
+  font-size: .6em;
 }
 
 @media screen and (max-width: 1320px) and (min-width: 961px) {
   .row.top {
-    margin: 52px 0 -1px -20px;
+    margin: 76px 0 -1px -20px;
   }
 }
+
+#header .bottom {
+  border-top: solid 1px rgba(255, 255, 255, 0.05);
+  box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.15);
+  padding-top: 2em;
+  margin-top: 1em;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  }
+/* 
+  		#header .bottom {
+  		  position: absolute;
+  		  left: 0;
+  		  bottom: 0;
+  		  width: 100%;
+  		} */
 
 /* Reset */
 
@@ -86,7 +108,8 @@ article#app.item > span {
 
 	.container {
 		margin-left: auto;
-		margin-right: auto;
+    margin-right: auto;
+    background: gainsboro;
 	}
 
 	.container.\31 25\25 {
@@ -1647,7 +1670,7 @@ article#app.item > span {
 		}
 
 	footer {
-		margin: 2em 0 0 0;
+    margin: 2em 0 0 0;
 	}
 
 	strong, b {
@@ -1964,7 +1987,8 @@ article#app.item > span {
 
 	.item {
 		box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
-		margin-bottom: 40px;
+    margin-bottom: 40px;
+    background: #fff;
 	}
 
 
@@ -2076,12 +2100,7 @@ article#app.item > span {
 			width: 100%;
 		}
 
-		#header .bottom {
-			position: absolute;
-			left: 0;
-			bottom: 0;
-			width: 100%;
-		}
+
 
 		#header .icons {
 			font-size: 0.8em;
@@ -2115,12 +2134,16 @@ article#app.item > span {
 			position: relative;
 			color: #555152;
 			font-weight: 600;
-			font-size: 1em;
+      font-size: 1em;
 			line-height: 1em;
     }
     
     #logo h4 {
       font-size: .8em;
+      margin-bottom: 2em;
+      padding-bottom: 2em;
+      border-bottom: 1px solid #555152;
+      
     }
 
 		#logo p {
@@ -2181,7 +2204,7 @@ article#app.item > span {
 	#footer {
 		margin-left: 375px;
 		text-align: center;
-		background-color: #fff;
+		background-color: gainsboro;
 		padding: 3em 0 4em 0;
 		/* box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025); */
 		font-size: 0.8em;
@@ -2456,13 +2479,7 @@ article#app.item > span {
 					position: relative;
 				}
 
-				#header .bottom {
-					border-top: solid 1px rgba(255, 255, 255, 0.05);
-					box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.15);
-					padding-top: 2em;
-					margin-top: 1em;
-					position: relative;
-				}
+
 
 			#logo {
 				margin: 1.5em 1.25em 1.25em 1.25em;
@@ -2515,7 +2532,7 @@ article#app.item > span {
 						border-radius: 0.35em;
 						text-align: center;
 						position: absolute;
-						left: 0.5em;
+						left: -0.5em;
 						top: 0.5em;
 						display: block;
 						width: 3.25em;
