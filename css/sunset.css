@@ -27,10 +27,15 @@ section {
   border: 0;
   font-size: 100%;
   vertical-align: baseline;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .heading {
   text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 3em;
+  color: #413E4A;
 }
 
 .container {
@@ -44,4 +49,82 @@ section {
   width: 500px;
   height: 500px;
   border: 10px solid #413E4A
+}
+
+.sky {
+  width: 100%;
+  height: 46%;
+  background: #61D2D6;
+  position: relative;
+}
+
+.sun {
+  width: 85px;
+  height: 85px;
+  top: 40px;
+  right: 40px;
+  background: orange;
+  border-radius: 50%;
+  position: absolute;
+  
+}
+
+.sea {
+  position: relative;
+  width: 100%;
+  height: 27%;
+  /* background: #14526B; */
+  background-color:#14526B
+}
+
+.sea:before {
+  content: '';
+  height: 75px;
+  width: 272px;
+  position: absolute;
+  background-color: #14526B;
+  bottom: -40px;
+  left: 0px;
+  border-radius: 49%;
+  /* background-image: radial-gradient(circle at 100% 150%, #14526B 24%, white 24%, white 28%, #14526B 28%, #14526B 36%, white 36%, white 40%, transparent 40%, transparent),
+  radial-gradient(circle at 0 150%, #14526B 24%, white 24%, white 28%, #14526B 28%, #14526B 36%, white 36%, white 40%, transparent 40%, transparent),
+  radial-gradient(circle at 50% 100%, white 10%, #14526B 10%, #14526B 23%, white 23%, white 30%, #14526B 30%, #14526B 43%, white 43%, white 50%, #14526B 50%, #14526B 63%, white 63%, white 71%, transparent 71%, transparent),
+  radial-gradient(circle at 100% 50%, white 5%, #14526B 5%, #14526B 15%, white 15%, white 20%, #14526B 20%, #14526B 29%, white 29%, white 34%, #14526B 34%, #14526B 44%, white 44%, white 49%, transparent 49%, transparent),
+  radial-gradient(circle at 0 50%, white 5%, #14526B 5%, #14526B 15%, white 15%, white 20%, #14526B 20%, #14526B 29%, white 29%, white 34%, #14526B 34%, #14526B 44%, white 44%, white 49%, transparent 49%, transparent);
+  background-size: 100px 50px; */
+}
+
+.sea:after {
+  content: '';
+  height: 57px;
+  width: 259px;
+  position: absolute;
+  background: #F5D39D;
+  bottom: -48px;
+  left: 241px;
+  border-radius: 50%;
+  overflow: hidden;
+  transform: skew(10deg, -8deg);
+  z-index: 5;
+}
+
+.patch {
+  height: 50px;
+  width: 69px;
+  background-color: #14526B;
+  position: absolute;
+  bottom: -40px;
+  left: 261px;
+  /* background-image: radial-gradient(circle at 100% 150%, #14526B 24%, white 24%, white 28%, #14526B 28%, #14526B 36%, white 36%, white 40%, transparent 40%, transparent),
+  radial-gradient(circle at 0 150%, #14526B 24%, white 24%, white 28%, #14526B 28%, #14526B 36%, white 36%, white 40%, transparent 40%, transparent),
+  radial-gradient(circle at 50% 100%, white 10%, #14526B 10%, #14526B 23%, white 23%, white 30%, #14526B 30%, #14526B 43%, white 43%, white 50%, #14526B 50%, #14526B 63%, white 63%, white 71%, transparent 71%, transparent),
+  radial-gradient(circle at 100% 50%, white 5%, #14526B 5%, #14526B 15%, white 15%, white 20%, #14526B 20%, #14526B 29%, white 29%, white 34%, #14526B 34%, #14526B 44%, white 44%, white 49%, transparent 49%, transparent),
+  radial-gradient(circle at 0 50%, white 5%, #14526B 5%, #14526B 15%, white 15%, white 20%, #14526B 20%, #14526B 29%, white 29%, white 34%, #14526B 34%, #14526B 44%, white 44%, white 49%, transparent 49%, transparent);
+  background-size: 100px 50px; */
+}
+
+.land {
+  width: 100%;
+  height: 27%;
+  background: #F5D39D
 }
