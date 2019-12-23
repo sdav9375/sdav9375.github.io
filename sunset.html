@@ -1,40 +1,37 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/sunset.css" />
-  <title>Document</title>
-</head>
-<body>
-  <h1 class="heading">Sunset</h1>
-  <div class="container">
-    <div class="frame">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/sunset.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="heading">Sunset</h1>
+    <div class="container">
+      <div class="frame">
+        <!-- Sky -->
+        <div class="sky">
+          <div class="sun"></div>
+        </div>
 
-      <!-- Sky -->
-      <div class="sky">
-        <div class="sun"></div>
+        <!-- Sea -->
+        <div class="sea">
+          <div class="waves"></div>
+
+          <div class="patch"></div>
+        </div>
+
+        <!-- Land -->
+        <div class="land"></div>
       </div>
-
-      <!-- Sea -->
-      <div class="sea">
-        <div class="waves"></div>
-
-        <div class="patch"></div>
-      </div>
-
-      <!-- Land -->
-      <div class="land"></div>
-
     </div>
-  </div>
-  <button onclick="day()">Day</button>
-  <button onclick="sunSet()">Sunset</button>
-  <button>Night</button>
-  <script type="text/javascript" src="sunset.js">
-  
-  
-  </script>
-</body>
+    <div class="button-group">
+      <button onclick="day()">Day</button>
+      <button onclick="sunSet()">Sunset</button>
+      <button>Night</button>
+    </div>
+    <script type="text/javascript" src="sunset.js"></script>
+  </body>
 </html>

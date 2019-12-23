@@ -6,7 +6,6 @@ function sunSet() {
   sun.style.top = '176px'
   sun.style.left = '260px'
   sky.style.background = '#ff5722'
-
 }
 
 function day() {
